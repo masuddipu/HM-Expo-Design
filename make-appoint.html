@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Make Appointment</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#contactModal">
+    MAKE AN APPOINTMENT
+  </button>
+  
+  <!-- APPointment Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background: #EF3E36;">
+          <h5 class="modal-title text-white" style="font-weight: 550;" id="exampleModalLabel">MAKE AN APPOINTMENT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="text-white" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background: #E6ECF8;">
+            <form method="POST" style="margin: 15px; padding-top: 15px;">
+                <div class="form-group row">
+                  <label for="name" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="email" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mobile" class="col-sm-2 col-form-label">Mobile</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="mobile" aria-describedby="emailHelp">
+                    <small id="mobileHelp" class="form-text text-muted">We'll never share your mobile number with anyone else.</small>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="message" class="col-sm-2 col-form-label">Message</label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="button" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <button type="submit" class="primary-button no-rounded">Submit</button>
+                    </div>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer" style="background: #EF3E36;">
+          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Jquery -->
+  <script src="js/jquery.min.js"></script>
+
+  <!--Popper JS-->
+  <script src="js/popper.min.js"></script>
+
+  <!--Popper JS-->
+  <script src="js/popper.min.js"></script>
+
+  <!-- Bootstrap JS-->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
