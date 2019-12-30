@@ -87,24 +87,20 @@ $(document).ready(function () {
     loop: false,
     smartSpeed: 850,
     responsiveClass: true,
+    dots: false,
     nav: true,
     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
     responsive: {
       0: {
         items: 1,
-        nav: false,
-        dots: true,
         margin: 30,
       },
       600: {
         items: 2,
-        nav: false,
-        dots: true,
         margin: 0,
       },
       1000: {
         items: 3,
-        dots: false,
         margin: 0,
       }
     }
